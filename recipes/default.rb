@@ -8,3 +8,7 @@
 #
 
 package 'docker-io'
+
+service 'docker' do
+  action [:start, :enable]
+end
