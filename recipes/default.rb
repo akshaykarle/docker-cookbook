@@ -12,3 +12,8 @@ package 'docker-io'
 service 'docker' do
   action [:start, :enable]
 end
+
+group 'docker' do
+  action :modify
+  members 'vagrant'
+end
